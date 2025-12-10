@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Cloud Deployment</title>
+    <style>
+        /* IMPORT GOOGLE FONTS */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* Animated Gradient Background */
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white; /* Set default text color to white for contrast */
+        }
+
+        /* CARD CONTAINER (GLASSMORPHISM) */
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            padding: 3rem;
+            text-align: center;
+            width: 90%;
+            max-width: 450px;
+            
+            /* Entrance Animation */
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        /* STYLING FOR REQUIRED ELEMENTS */
+        h1 { /* My First Cloud Deployment */
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        h2 { /* Hello, my name is YOUR NAME */
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        img { /* Profile Image */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.5); /* Modern white border */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease;
+            display: block;
+            margin: 0 auto 2rem auto;
+        }
+
+        img:hover {
+            transform: scale(1.05) rotate(3deg);
+        }
+
+        p { /* This is my first deployed website! */
+            font-size: 1rem;
+            font-weight: 300;
+            opacity: 0.8;
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* ANIMATIONS KEYFRAMES */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>My First Cloud Deployment</h1>
+
+        <h2>Hello, my name is Jan Reinnen Calapao</h2>
+
+        <img src="pictorial1.JPG" width="200" />
+        
+        <p>This is my first deployed website!</p>
+    </div>
+
+</body>
+</html>
